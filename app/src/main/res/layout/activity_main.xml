@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="Enter your text:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="word"
+        android:inputType="textPassword"
+        android:padding="12dp">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/wordHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/word"
+        android:background="#FF0000"
+        android:padding="5dp"
+        android:text="Waiting for data"
+        android:textColor="#fff" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="Search something:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <com.jorgesys.textwatcher.InstantAutoComplete
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write something"
+        android:inputType="textPassword"
+        android:padding="12dp">
+
+    </com.jorgesys.textwatcher.InstantAutoComplete>
+
+    <TextView
+        android:id="@+id/searchHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search"
+        android:background="#FF0000"
+        android:padding="5dp"
+        android:text="Waiting for data"
+        android:textColor="#fff" />
+
+
+</LinearLayout>
